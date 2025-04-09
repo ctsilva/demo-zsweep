@@ -1,0 +1,12 @@
+mv ZS_BASIC.CPP zs_basic.cpp
+mv ZS_BASIC.HH zs_basic.hh
+mv ZS_CELL.CPP zs_cell.cpp
+mv ZS_CELL.HH zs_cell.hh
+mv ZS_DEBUG.HH zs_debug.hh
+mv ZS_HASH.CPP zs_hash.cpp
+mv ZS_HASH.HH zs_hash.hh
+mv ZS_HEAP.CPP zs_heap.cpp
+mv ZS_HEAP.HH zs_heap.hh
+mv ZS_LIGHT.HH zs_light.hh
+mv ZS_SCENE.CPP zs_scene.cpp
+mv ZS_SCENE.HH zs_scene.hh
