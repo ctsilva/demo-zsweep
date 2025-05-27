@@ -30,9 +30,30 @@
 *.exe
 *.out
 *.app
+demo
 
-# OS generated files #
-######################
+# CMake build files
+build/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+core
+
+# OS generated files
 .DS_Store
 .DS_Store?
 ._*
@@ -40,3 +61,8 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Project specific output files
+*.ppm
+*.tf
+*.off
