@@ -423,10 +423,10 @@ void zsmain(int argc, char **argv)
   //Lighting      *lightptr;
 
   /* Default options */
-  char     *inputname    = "/Users/csilva/src/demo-zsweep/input.off";
+  char     *inputname    = "data/INPUT.OFF";
   // char     *inputname    = "demodata01.off";
   char     *basenameFile = "pix";
-  char     *tfname       = "/Users/csilva/src/demo-zsweep/spx.tf";
+  char     *tfname       = "data/SPX.TF";
   unsigned  xres   = RESOLUTION, yres = RESOLUTION;
   float     xang = 0.0, yang = 0.0, zang = 0.0;
   //  float     px0 = 0.0, py0 = 0.0 , pz0 = 0.0;

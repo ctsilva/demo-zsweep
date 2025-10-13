@@ -16,19 +16,19 @@ TK_FLAGS =
 
 OBJS = zs_ZSweepDemo.o
 
-OBJS = zs_general.o \
-       zs_basic.o zs_cell.o zs_heap.o zs_screenLists.o zs_hash.o \
-       zs_debugFuncs.o zs_readToff.o zs_boundary.o zs_sparse.o   \
-       zs_scene.o zs_render.o zs_renderPAR.o zs_fakeSMP.o zs_OpenGL.o \
-       zs_mainOriginal.o zs_ZSweepDemo.o
+OBJS = src/zs_general.o \
+       src/zs_basic.o src/zs_cell.o src/zs_heap.o src/zs_screenLists.o src/zs_hash.o \
+       src/zs_debugFuncs.o src/zs_readToff.o src/zs_boundary.o src/zs_sparse.o   \
+       src/zs_scene.o src/zs_render.o src/zs_renderPAR.o src/zs_fakeSMP.o src/zs_OpenGL.o \
+       src/zs_mainOriginal.o src/zs_ZSweepDemo.o
 
 # Link stage -------------------
 demo: $(OBJS)
 	$(CXX) $(CXXFLAGS) -o demo $(OBJS) $(LIBDIRS) $(LIBS)
 
-zs_ZSweepDemo.o: zs_ZSweepDemo.cpp zs_ZSweepDemo.hh
-	$(CXX) $(CXXFLAGS)  -c zs_ZSweepDemo.cpp
+src/%.o: src/%.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
-	rm -f core *.o demo *~
+	rm -f core src/*.o demo *~
 
